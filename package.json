@@ -1,0 +1,26 @@
+{
+  "name": "apollo-graphql-basics",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "scripts": {
+    "babel-node": "babel-node --presets=latest",
+    "start": "nodemon --exec npm run babel-node -- ./server.js",
+    "build": "babel src -d dist"
+  },
+  "dependencies": {
+    "express": "^4.16.2",
+    "graphql-tools": "^2.21.0",
+    "nodemon": "^1.17.1",
+    "react-apollo": "^2.0.4"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-latest": "^6.24.1"
+  }
+}
